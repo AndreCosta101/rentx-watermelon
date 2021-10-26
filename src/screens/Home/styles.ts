@@ -29,7 +29,8 @@ export const TotalCars = styled.Text`
 `;
 
 export const CarList = styled.FlatList.attrs({
-  showVerticalScrollIndicator: false
-})`
-  padding: 24px;
-`;
+  showVerticalScrollIndicator: false,
+  contentContainerStyle: {
+    padding: 24,
+  }
+})``;
