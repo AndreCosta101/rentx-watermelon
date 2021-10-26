@@ -27,3 +27,9 @@ export const TotalCars = styled.Text`
   font-family: ${({ theme }) => theme.fonts.primary_400};
   color: ${({ theme }) => theme.colors.text};
 `;
+
+export const CarList = styled.FlatList.attrs({
+  showVerticalScrollIndicator: false
+})`
+  padding: 24px;
+`;
