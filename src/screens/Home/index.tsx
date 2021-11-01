@@ -15,7 +15,7 @@ import {
 } from './styles';
 
 export function Home() {
-  const Lucas = "Olá Lucasg"
+
   const navigation = useNavigation<any>();
 
 
