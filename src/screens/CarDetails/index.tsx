@@ -32,13 +32,12 @@ interface Params {
 }
 
 export function CarDetails() {
-  const [number, setNumber] = useState(1);
   const navigation = useNavigation<any>();
   const route = useRoute();
   const { car } = route.params as Params;
 
   function handleConfirmRental() {
-    navigation.navigate('Scheduling')
+    navigation.navigate('Scheduling', { car })
   }
 
   function handleGoBack() {

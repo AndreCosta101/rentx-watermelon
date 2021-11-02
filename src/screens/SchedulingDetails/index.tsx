@@ -1,6 +1,7 @@
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
+import { CarDTO } from '../../dtos/CarDTO';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { useTheme } from 'styled-components';
 
@@ -44,20 +45,29 @@ import {
   RentalPriceTotal,
 } from './styles';
 
+interface Params {
+  car: CarDTO;
+}
+
 export function SchedulingDetails() {
   const theme = useTheme();
-
   const navigation = useNavigation<any>();
+  const route = useRoute();
+  const { car } = route.params as Params;
 
   function handleConfirmRental() {
     navigation.navigate('SchedulingComplete')
+  }
+
+  function handleGoBack() {
+    navigation.goBack();
   }
 
   return (
     <Container>
       <Header>
         <BackButton
-          onPress={() => { }}
+          onPress={handleGoBack}
         />
       </Header>
 
