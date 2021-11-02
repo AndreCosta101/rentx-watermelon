@@ -42,6 +42,7 @@ interface Params {
   car: CarDTO;
 }
 
+
 export function Scheduling() {
   const [lastSelectedDate, setLastSelectedDate] = useState<DayProps>({} as DayProps);
   const [markedDates, setMarkedDates] = useState<MarkedDateProps>({} as MarkedDateProps);
@@ -78,6 +79,7 @@ export function Scheduling() {
 
     setLastSelectedDate(end);
     const interval = generateInterval(start, end);
+    console.log(interval)
     setMarkedDates(interval)
 
     const firstDate = Object.keys(interval)[0];

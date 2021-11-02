@@ -30,7 +30,7 @@ export function Car({ data, ...rest }: Props) {
   return (
     <Container {...rest}>
       <Details>
-        <Brand>data.brand</Brand>
+        <Brand>{data.brand}</Brand>
         <Name>{data.name}</Name>
 
         <About>
