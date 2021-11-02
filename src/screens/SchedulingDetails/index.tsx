@@ -38,6 +38,8 @@ import {
   RentalPriceQuota,
   RentalPriceTotal,
 } from './styles';
+
+
 import { getPlatformDate } from '../../utils/getPlatformDate';
 import { api } from '../../services/api';
 import { Alert } from 'react-native';
