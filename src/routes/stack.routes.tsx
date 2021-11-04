@@ -10,10 +10,19 @@ import { Scheduling } from '../screens/Scheduling';
 import { SchedulingDetails } from '../screens/SchedulingDetails';
 import { SchedulingComplete } from '../screens/SchedulingComplete';
 import { MyCars } from '../screens/MyCars';
+import { Splash } from '../screens/Splash';
 
 export function StackRoutes() {
   return (
-    <Navigator screenOptions={{ headerShown: false }}>
+    <Navigator
+      initialRouteName="Splash"
+      screenOptions={{
+        headerShown: false,
+      }}>
+      <Screen
+        name="Splash"
+        component={Splash}
+      />
       <Screen
         name="Home"
         component={Home}
