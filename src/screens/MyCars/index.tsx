@@ -33,7 +33,7 @@ interface CarProps {
 import { BackButton } from '../../components/BackButton';
 import { Car } from '../../components/Car';
 import { useTheme } from 'styled-components';
-import { Load } from '../../components/Load';
+import { LoadAnimation } from '../../components/LoadAnimation';
 
 export function MyCars() {
   const [cars, setCars] = useState<CarProps[]>([]);
@@ -84,7 +84,7 @@ export function MyCars() {
 
       </Header>
 
-      {loading ? <Load /> :
+      {loading ? <LoadAnimation /> :
 
         <Content>
           <Appointments>
