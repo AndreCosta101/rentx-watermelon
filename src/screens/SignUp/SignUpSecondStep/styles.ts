@@ -6,7 +6,6 @@ export const Container = styled.View`
   padding: 0 24px;
 
   background-color: ${({ theme }) => theme.colors.background_primary};
-
 `;
 export const Header = styled.View`
   width: 100%;
