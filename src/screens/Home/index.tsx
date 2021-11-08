@@ -27,10 +27,6 @@ export function Home() {
     navigation.navigate('CarDetails', { car });
   }
 
-  function handleOpenMyCars() {
-    navigation.navigate('MyCars');
-  }
-
   useEffect(() => {
     async function fetchCars() {
       try {
