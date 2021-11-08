@@ -17,7 +17,7 @@ import { SignUpFirstStep } from '../screens/SignUp/SignUpFirstStep';
 export function StackRoutes() {
   return (
     <Navigator
-      initialRouteName="Splash"
+      initialRouteName="SignIn"
       screenOptions={{
         headerShown: false,
       }}>
