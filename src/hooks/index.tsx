@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import { AuthProvider } from './auth';
 
 interface AppProviderProps {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 function AppProvider({ children }: AppProviderProps) {
