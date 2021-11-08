@@ -52,6 +52,11 @@ export function SignUpSecondStep() {
     }
 
     // enviar para API
+    navigation.navigate('Confirmation', {
+      nextScreenRoute: 'SignIn',
+      title: 'Conta Criada !',
+      message: `Agora é só fazer login\n e aproveitar`
+    })
   }
 
   function handleBack() {
